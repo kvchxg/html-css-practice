@@ -1,0 +1,64 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 80px;
+    padding-top: 0;
+    gap: 48px;
+    
+
+
+    &__item-box{
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+
+        @media screen and (max-width: 1120px){
+            flex-wrap: wrap;
+            
+        }
+        
+
+    }
+
+    &__item {
+        flex-basis: 296px ;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid $meduim-grey-transparent;
+        padding: 32px 34px;
+        gap: 15px;
+        min-width: 155px;
+
+        &:hover {
+            background-color: $yellow;
+            transition: 0.5s;
+        }
+
+        
+       
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 10%;
+        padding: 12px;
+        background-color: $light-yellow ;
+
+       
+
+        
+    }
+
+    h2{
+        text-align: center;
+    }
+
+
+    
+}

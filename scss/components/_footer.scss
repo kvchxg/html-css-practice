@@ -1,0 +1,183 @@
+.footer {
+    
+    display: flex;
+    background-color: $black;
+    position: relative;
+    padding: 60px 80px;
+    
+    flex-direction: column;
+
+    
+
+    &__logo{
+        position: absolute;
+        left: 80px;
+        width: 140px;
+        height: 29px;   
+
+       
+        @media screen and (max-width:$bp2) {
+        
+        
+            left: 30px;
+            width: 80px;
+            top:25px;
+            
+    
+            
+        }
+
+        @media screen and (max-width:$bp3) {
+        
+        
+            display: none;
+            
+    
+            
+        }
+    }
+
+    &__menu{
+       
+        display: flex;
+        align-items: center;
+        font-family: "Inter";
+        gap: 24px;
+        font-size: 16px;
+        color: $white;
+        justify-content: flex-end;
+        padding-bottom: 60px;
+        text-align: center;
+
+
+        @media screen and (max-width: $bp2) {
+        
+        
+            
+            gap: 12px;
+            font-size: 14px;
+            
+    
+            
+        }
+
+
+      
+    }
+
+    &__form{
+        display: flex;
+        padding: 84px 64px;
+        background-color: $dark-grey;
+
+        @media screen and (max-width: $bp2) {
+        
+            
+            flex-wrap: wrap;
+    
+            
+        }
+
+        @media screen and (max-width: $bp3) {
+        
+            padding: 40px 20px;
+            
+            
+        }
+        
+
+    }
+
+    &__label{
+        display: flex;
+        width: 50%;
+        color: $white;
+        min-width: 275px;
+
+        @media screen and (max-width: $bp2) {
+        
+            width: 100%;
+            flex-wrap: wrap;
+    
+            
+        }
+    }
+
+    &__input{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: $bp2) {
+        
+            
+            flex-wrap: wrap;
+            padding-left: 0;
+            padding-top: 20px;
+    
+            
+        }
+
+
+    }
+
+    &__input-field {
+        border: 1px solid $form-grey;
+        color: $form-grey;
+        width: 60%;
+        height: 56px;
+        padding: 14px 25px;
+        font-family: "inter";
+        min-width: 280px;
+    }
+
+    &__contacts {
+        display: flex;
+        width: 100%;
+        padding-top: 48px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__address{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 28px;
+        color: $white;
+        font-family: "Inter";
+        opacity: 0.7;
+        padding-right: 48px;
+    }
+
+    &__links {
+        display: flex;
+        gap: 27px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+    }
+
+    &__links-icon {
+        width: 16px;
+        height: 16px;
+        fill: $meduim-grey;
+    }
+
+    label {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+
+    @media screen and (max-width: $bp0) {
+        
+        padding: 30px 30px;
+
+        
+    }
+
+}

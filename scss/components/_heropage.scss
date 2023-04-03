@@ -1,0 +1,85 @@
+.heropage {
+   
+    position: relative;
+    z-index: 1;
+    padding: 128px 81px;
+    background-image: url("../img/heropage.png");
+    background-position: cover;
+    height: 720px;
+    
+
+
+
+    &__text {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        z-index: 3;
+        font-size: 16px;
+        color: $white;
+        width: 75%;
+
+        @media screen and (max-width: $bp2) {
+            width: 100%;
+            
+        }
+
+
+    }
+
+
+    &__secondary-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-family: "Inter";
+        width: 60%;
+        
+
+
+        &--yellow {
+            color: $yellow;
+        }
+    }
+
+
+    @media screen and (max-width: $bp0){
+        
+        background-position: -50px;
+
+    }
+    
+    @media screen and (max-width: $bp1){
+        padding: 50px 30px;
+
+    }
+
+    @media screen and (max-width: $bp3){
+        padding: 30px 30px;
+        background-position: -300px;
+
+    }
+
+   
+        
+    
+
+
+   
+
+    
+    
+}
+
+.heropage::after {
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(30.56% 76.04% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    position: absolute;
+    z-index: 2;
+}

@@ -1,0 +1,63 @@
+.authors {
+    display: flex;
+    padding: 128px 80px;
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+
+        @media screen and (max-width:1200px) {
+            flex-wrap: wrap;
+            
+        }
+    }
+
+    &__person{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 296px;
+        min-width: 244px;
+        justify-content: center;
+        padding: 40px 20px;
+        background-color: $light-grey;
+        gap: 5px;
+
+        &:hover {
+            background-color: $light-yellow;
+            transition: 0.5s;
+        }
+
+
+        img {
+            width: 128px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__sm-links{
+        display: flex;
+        gap: 16px ;
+        margin-top: 20px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: $black;
+        }
+
+    }
+
+    @media screen and (max-width: $bp1) {
+        padding: 50px 30px; ;
+        
+    }
+
+
+}

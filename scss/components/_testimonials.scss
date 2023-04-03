@@ -1,0 +1,228 @@
+.testimonials {
+    display: flex;
+    margin: 128px 80px;
+    margin-top: 0;
+    padding: 80px 112px;
+    background-color:$light-yellow;
+    display: flex;
+    
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid $meduim-grey;
+        min-width: 283px;
+        padding-right: 80px;
+        width: 40%;
+        gap: 16px;
+
+        p {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            
+        }
+
+
+        @media screen and (max-width: $bp1) {
+            padding-bottom: 40px;
+            padding-right: 0;
+            border-right: none;
+            border-bottom: 1px solid $meduim-grey;
+            width: 80%;
+            
+    
+            
+        }
+        
+    }
+
+    &__feedback {
+        display: flex;
+        flex-direction: column;
+        width:60%;
+        position: relative;
+        padding: 0 96px;
+        gap: 120px;
+
+        @media screen and (max-width: 12000px) {
+            padding: 0 45px;
+            
+        }
+
+        @media screen and (max-width: $bp1) {
+            padding: 40px 0px;
+            width: 80%;
+            
+    
+            
+        }
+
+    }
+
+    &__author {
+        display: flex;
+        
+       
+        &::before {
+            content: url(../../img/Profile-picture.png);
+        }
+
+        @media screen and (max-width: $bp2) {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+               
+        }
+        
+    
+    }
+
+    
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        padding:0 16px;
+        margin-right: 40px;
+
+        @media screen and (max-width: $bp2) {
+            margin-right: 0px;
+           
+               
+        }
+        
+    }
+
+    &__switchers-container {
+        position: absolute;
+        display: flex;
+        gap: 24px;
+        right: -30px;
+        align-items: center;
+
+
+        @media screen and (max-width: $bp0) {
+         right: -20px;
+            
+        }
+
+        @media screen and (max-width: $bp2) {
+            position: static;
+               
+        }
+    }
+
+    &__switcher {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            cursor: pointer;
+        }
+        
+        
+        
+
+        &--back{
+
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: $white;
+            
+            
+            
+        }
+
+        &--forward{
+
+            
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background-color: $black;
+            
+        }
+    }
+
+
+    &__arrows{
+
+        width: 55%;
+        height: 2px;
+        border-radius: 2px;
+        
+        
+       
+
+        &--back {
+            background-color: $black;
+            
+        }
+
+        &--forward {
+            background-color: $white;
+            
+        }
+
+
+    }
+
+    &__arrows-indexes {
+
+        width: 13px;
+        height: 13px;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        position: absolute;
+
+        &--back{
+            border: 2px solid $black;
+            border-top: none;
+            border-right: none;
+            left: 11px;
+            
+            
+        }
+
+        &--forward{
+            border: 2px solid $white;
+            border-bottom: none;
+            border-left: none;
+            right: 14px;
+            
+        }
+
+        
+
+    }
+
+
+    @media screen and (max-width: $bp0) {
+        margin: 50px 30px;
+        padding: 50px 30px;
+
+        
+    }
+
+    @media screen and (max-width: $bp1) {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+
+        
+    }
+
+    
+
+
+
+    
+}

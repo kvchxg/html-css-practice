@@ -1,0 +1,54 @@
+.links {
+    padding: 128px 90px;
+    padding-top: 0;
+    display: flex;
+    width: 100%;
+    
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        margin-right: 85px;
+        justify-content: center;
+
+        &--transparent {
+            opacity: 0.6;
+        }
+
+        &--main {
+            color: $meduim-grey;
+        }
+
+        @media screen and (max-width: $bp3) {
+            margin-right: 30px;
+            
+        }
+    }
+
+    &__sm-links {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        svg{
+            
+            width: 160px;
+            height: 40px;
+            margin: 16px 0;
+            fill:$meduim-grey;
+            
+        }
+
+       
+    }
+
+    @media screen and (max-width: $bp2) {
+        padding: 50px 30px; 
+        
+    }
+}
